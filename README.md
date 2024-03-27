@@ -12,7 +12,7 @@
 - I am using VScode (at Linux) but you can choose your IDE
 
 # Authentication by OAuth2
-Default Authentication is boring and does nothing. The project needs an OIDC provider for OAuth2 client, even the development only meant for localhost.
+Default Authentication is boring and does nothing. The project needs an OIDC provider for OAuth2 client even the development only.
 
 ## Get OIDC playground at https://openidconnect.net/
 Any OIDC provider is good. An issue is the OIDC provider must allows callback to localhost. Any developer forking this project needs to register your account at openidconnect or other playground.
