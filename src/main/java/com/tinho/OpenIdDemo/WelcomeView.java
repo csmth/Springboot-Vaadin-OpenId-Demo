@@ -29,7 +29,7 @@ public class WelcomeView extends VerticalLayout{
             );
         } else {
             add(new H1("Login to access this app"));
-            add(new Paragraph("This is my demo app for Spring Security + developer OpenID. Please Login here:"));
+            add(new Paragraph("This is TinHo's demo app for Spring Security + developer OpenID. Please Login here:"));
             Anchor loginLink = new Anchor(OAUTH_URL, "Login with OpenID");
             loginLink.addClassName(LumoUtility.FontSize.XLARGE);
             loginLink.setRouterIgnore(true); // actually navigate away from this app
