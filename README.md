@@ -15,7 +15,8 @@
 Default Authentication is boring and does nothing. The project needs an OIDC provider for OAuth2 client even the development only.
 
 ## Get OIDC playground at https://openidconnect.net/
-Any OIDC provider is good. An issue is the OIDC provider must allows callback to localhost. Any developer forking this project needs to register your account at openidconnect or other playground.
+Any OIDC provider is good. An issue is the OIDC provider must allows callback to localhost. Other OIDC playground account could be:
+- https://developers.google.com/identity/openid-connect/openid-connect
 
 Set the allowed callback URL (which is 'redirect_uri') at the OIDC provider (change your port number if needed):
 ```
@@ -30,7 +31,7 @@ spring.security.oauth2.client.registration.my-oidc-client.client-secret=X4r-Ox-q
 spring.security.oauth2.client.registration.my-oidc-client.authorization-grant-type=authorization_code
 spring.security.oauth2.client.registration.my-oidc-client.scope: openid,profile,email
 ```
-Change ```client-id```, ```client-secret``` and ```issuer-uri``` for different OIDC provider. **Do not disclose these information for any serious project**. I disclose them only because that is a playground.
+**Change** ```client-id```, ```client-secret``` and ```issuer-uri``` for different OIDC provider. **Do not disclose these information for any serious project**. I disclose them only because that is just a playground.
 
 ## Add SecurityConfig to demand authentication except login url
 ```
