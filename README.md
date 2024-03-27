@@ -30,7 +30,7 @@ spring.security.oauth2.client.registration.my-oidc-client.client-secret=X4r-Ox-q
 spring.security.oauth2.client.registration.my-oidc-client.authorization-grant-type=authorization_code
 spring.security.oauth2.client.registration.my-oidc-client.scope: openid,profile,email
 ```
-Change client-id, client-secret and issuer-uri for different OIDC provider. Do not disclose these information for any serious project. I disclose them only because that is a playground.
+Change ```client-id```, ```client-secret``` and ```issuer-uri``` for different OIDC provider. **Do not disclose these information for any serious project**. I disclose them only because that is a playground.
 
 ## Add SecurityConfig to demand authentication except login url
 ```
