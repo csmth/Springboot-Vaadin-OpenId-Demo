@@ -5,7 +5,7 @@
 - Dependencies
   1. OAuth2 Client
   2. Vaadin
-- Dependencies wish to be added later
+- Dependencies to be added later
   1. H2 Database
   2. JDBC API
 - I am using VScode at Ubuntu but I believe other IDE like Eclipse works perfectly
