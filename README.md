@@ -1,0 +1,49 @@
+# Project Bootup at https://start.spring.io/
+- Project: maven  (you can choose gradle, not big deal)
+- Language: Java 17
+- Spring Boot: 3.2.4
+- Packaging: Jar (init only, war is also fine)
+- Dependencies
+  1. OAuth2 Client
+  2. Vaadin
+- Dependencies wish to be added later
+  3. H2 Database
+  4. JDBC API
+- I am using VScode (at Linux) but you can choose your IDE
+
+# Authentication by OAuth2
+Default Authentication is boring and does nothing. The project needs an OIDC provider for OAuth2 client, even the development only meant for localhost.
+
+## Get OIDC playground at https://openidconnect.net/
+Any OIDC provider is good. An issue is the OIDC provider must allows callback to localhost. Any developer forking this project needs to register your account at openidconnect or other playground.
+
+Set the allowed callback URL (which is 'redirect_uri') at the OIDC provider (change your port number if needed):
+```
+http://localhost:8080/login/oauth2/code/my-oidc-client
+```
+Append the text below into ```application.properties``` for the my OIDC provide:
+```
+spring.security.oauth2.client.provider.my-oidc.issuer-uri: https://dev-2cbf33l86hcdfi7d.us.auth0.com/
+spring.security.oauth2.client.registration.my-oidc-client.provider=my-oidc
+spring.security.oauth2.client.registration.my-oidc-client.client-id=FvVEVGHAEMqwfTGCxFuCQdsTIx5Ahamd
+spring.security.oauth2.client.registration.my-oidc-client.client-secret=X4r-Ox-q-nEVcQqzIRFixPaHqEGShtqEWA_nY_xdSiADoOdTEefiLoF7BpDWdnb8
+spring.security.oauth2.client.registration.my-oidc-client.authorization-grant-type=authorization_code
+spring.security.oauth2.client.registration.my-oidc-client.scope: openid,profile,email
+```
+Change client-id, client-secret and issuer-uri for different OIDC provider. Do not disclose these information for any serious project. I disclose them only because that is a playground.
+
+## Add SecurityConfig to demand authentication except login url
+```
+@Configuration
+@EnableWebSecurity
+public class SecurityConfig extends VaadinWebSecurity {
+    private static final String LOGIN_URL = "/login";
+    @Override
+    public void configure(HttpSecurity http) throws Exception {
+        super.configure(http);
+        http.oauth2Login(c -> c.loginPage(LOGIN_URL).permitAll());
+    }
+}
+```
+
+Logout will be handled later.
