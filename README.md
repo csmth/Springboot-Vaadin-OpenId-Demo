@@ -50,10 +50,10 @@ public class SecurityConfig extends VaadinWebSecurity {
 ```
 Access to everything except LOGIN_URL will requires oauth2 authentication. Logout will be handled later.
 
-## Add Views and User Session
+## Add Views and User Session Beans
 A minimalist authenication project needs these:
-- ```User.java```: User Bean, focus on authenicated identity
-- ```UserSession.java```: User Session Bean
+- ```User.java```: User Bean focus on authenicated identity
+- ```UserSession.java```: User Session Bean which interact with ```SecurityContextHolder```
 - ```MainView.java```: The first view users seen *after* authenicated
 - ```WelcomeView.java```: A introduction view for non-authenicated user or being logged out. Its ```@Route``` is ```login``` which is recognized by ```SecurityConfig```
 
