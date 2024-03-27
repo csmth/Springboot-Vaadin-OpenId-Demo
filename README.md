@@ -54,7 +54,7 @@ Access to everything except LOGIN_URL will requires oauth2 authentication. Logou
 A minimalist authenication project needs these:
 - ```User.java```: User Bean focus on authenicated identity
 - ```UserSession.java```: User Session Bean which interact with ```SecurityContextHolder```
-- ```MainView.java```: The first view users seen *after* authenicated
+- ```MainView.java```: The first view users seen *after* authenicated. It has a logout button which should be refactored as a share component.
 - ```WelcomeView.java```: A introduction view for non-authenicated user or being logged out. Its ```@Route``` is ```login``` which is recognized by ```SecurityConfig```
 
 These 4 classes are borrowed from [a Vaadin blog](https://vaadin.com/blog/oauth-2-and-google-sign-in-for-a-vaadin-application) with minor customization.
