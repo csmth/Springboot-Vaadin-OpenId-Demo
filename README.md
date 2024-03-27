@@ -25,10 +25,10 @@ http://localhost:8080/login/oauth2/code/my-oidc-client
 Append the text below into ```application.properties``` for the my OIDC provide:
 ```
 spring.security.oauth2.client.provider.my-oidc.issuer-uri: https://dev-2cbf33l86hcdfi7d.us.auth0.com/
-spring.security.oauth2.client.registration.my-oidc-client.provider=my-oidc
-spring.security.oauth2.client.registration.my-oidc-client.client-id=FvVEVGHAEMqwfTGCxFuCQdsTIx5Ahamd
-spring.security.oauth2.client.registration.my-oidc-client.client-secret=X4r-Ox-q-nEVcQqzIRFixPaHqEGShtqEWA_nY_xdSiADoOdTEefiLoF7BpDWdnb8
-spring.security.oauth2.client.registration.my-oidc-client.authorization-grant-type=authorization_code
+spring.security.oauth2.client.registration.my-oidc-client.provider: my-oidc
+spring.security.oauth2.client.registration.my-oidc-client.client-id: FvVEVGHAEMqwfTGCxFuCQdsTIx5Ahamd
+spring.security.oauth2.client.registration.my-oidc-client.client-secret: X4r-Ox-q-nEVcQqzIRFixPaHqEGShtqEWA_nY_xdSiADoOdTEefiLoF7BpDWdnb8
+spring.security.oauth2.client.registration.my-oidc-client.authorization-grant-type: authorization_code
 spring.security.oauth2.client.registration.my-oidc-client.scope: openid,profile,email
 ```
 **Change** ```client-id```, ```client-secret``` and ```issuer-uri``` for different OIDC provider. **Do not disclose these information for any serious project**. I disclose them only because that is just a playground.
