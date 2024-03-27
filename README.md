@@ -7,8 +7,8 @@
   1. OAuth2 Client
   2. Vaadin
 - Dependencies wish to be added later
-  3. H2 Database
-  4. JDBC API
+  1. H2 Database
+  2. JDBC API
 - I am using VScode (at Linux) but you can choose your IDE
 
 # Authentication by OAuth2
