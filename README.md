@@ -48,4 +48,4 @@ public class SecurityConfig extends VaadinWebSecurity {
 }
 ```
 
-Logout will be handled later.
+Access to everything except LOGIN_URL will requires oauth2 authentication. Logout will be handled later.
