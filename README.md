@@ -23,7 +23,7 @@ Set the allowed callback URL (which is 'redirect_uri') at the OIDC provider (cha
 ```
 http://localhost:8080/login/oauth2/code/my-oidc-client
 ```
-Append the text below into ```application.properties``` for the my OIDC provide:
+Append the text below into ```application.properties``` for the my OIDC provider:
 ```
 spring.security.oauth2.client.provider.my-oidc.issuer-uri: https://dev-2cbf33l86hcdfi7d.us.auth0.com/
 spring.security.oauth2.client.registration.my-oidc-client.provider: my-oidc
