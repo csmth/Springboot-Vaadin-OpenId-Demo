@@ -8,7 +8,7 @@
 - Dependencies wish to be added later
   1. H2 Database
   2. JDBC API
-- I am using VScode (at Linux) but you can choose your IDE
+- I am using VScode at Ubuntu but I believe other IDE like Eclipse works perfectly
 
 # Authentication by OAuth2
 Default Authentication is boring and does nothing. The project needs an OIDC provider for OAuth2 client even the development only.
