@@ -1,7 +1,6 @@
 # Project Bootup at https://start.spring.io/
 - Project: maven  (you can choose gradle, not big deal)
-- Language: Java 17
-- Spring Boot: 3.2.4
+- Language: Java 17 with Spring Boot: 3.2.4
 - Packaging: Jar (init only, war is also fine)
 - Dependencies
   1. OAuth2 Client
