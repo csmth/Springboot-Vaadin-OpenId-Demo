@@ -53,7 +53,7 @@ Access to everything except LOGIN_URL will requires oauth2 authentication. Logou
 ## Add Views and User Session Beans
 A minimalist authenication project needs these:
 - ```User.java```: User Bean focus on authenicated identity. User Bean can be expanded later for Authorization.
-- ```UserSession.java```: User Session Bean which interact with ```SecurityContextHolder```. All models and business logic should not use this class except login and logout and trust User Bean.
+- ```UserSession.java```: User Session Bean which interact with ```SecurityContextHolder```. All models and business logic should not use this class except login and logout, they should trust User Bean.
 - ```MainView.java```: The first view users seen *after* authenicated. It has a logout button which should be refactored as a share component.
 - ```WelcomeView.java```: A introduction view for non-authenicated user or being logged out. Its ```@Route``` is ```login``` which is recognized by ```SecurityConfig```
 
