@@ -16,6 +16,7 @@ Default Authentication is boring and does nothing. The project needs an OIDC pro
 ## Get OIDC playground at https://openidconnect.net/
 Any OIDC provider is good. An issue is the OIDC provider must allows callback to localhost. Other OIDC playground account could be:
 - https://developers.google.com/identity/openid-connect/openid-connect
+- Setup local OIDC server: https://github.com/appvia/mock-oidc-user-server 
 
 Set the allowed callback URL (which is 'redirect_uri') at the OIDC provider (change your port number if needed):
 ```
