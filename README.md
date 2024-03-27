@@ -34,6 +34,7 @@ spring.security.oauth2.client.registration.my-oidc-client.scope: openid,profile,
 **Change** ```client-id```, ```client-secret``` and ```issuer-uri``` for different OIDC provider. **Do not disclose these information for any serious project**. I disclose them only because that is just a playground.
 
 ## Add SecurityConfig to demand authentication except login url
+This Security Configuration is made for Vaddin. Springboot Project without Vaadin should configure its own SecurityFilterChain.
 ```
 @Configuration
 @EnableWebSecurity
