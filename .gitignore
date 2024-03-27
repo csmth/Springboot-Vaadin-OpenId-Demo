@@ -162,3 +162,4 @@ frontend/generated/jar-resources/vaadin-dev-tools/theme-editor/metadata/componen
 frontend/generated/jar-resources/vaadin-dev-tools/theme-editor/metadata/components/presets.d.ts
 frontend/generated/jar-resources/vaadin-time-picker/helpers.js
 frontend/generated/jar-resources/vaadin-time-picker/timepickerConnector.js
+frontend/generated/index.ts
