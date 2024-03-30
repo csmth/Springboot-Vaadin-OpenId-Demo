@@ -1,4 +1,5 @@
-# Project Bootup at https://start.spring.io/
+# Project Creation
+Initialize Project at https://start.spring.io/ with:
 - Project: maven  (you can choose gradle, not big deal)
 - Language: Java 17 with Spring Boot: 3.2.4
 - Packaging: Jar (init only, war is also fine)
