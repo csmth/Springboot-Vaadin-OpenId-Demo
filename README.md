@@ -1,15 +1,14 @@
 # Project Creation
 Initialize Project at https://start.spring.io/ with:
-- Project: maven  (you can choose gradle, not big deal)
 - Language: Java 17 with Spring Boot: 3.2.4
-- Packaging: Jar (init only, war is also fine)
+- Packaging: Jar and Project: maven  (war packaging and gradle project also good)
 - Dependencies
   1. OAuth2 Client
   2. Vaadin
 - Dependencies to be added later
   1. H2 Database
   2. JDBC API
-- I am using VScode at Ubuntu but I believe other IDE like Eclipse works perfectly
+- I use VScode but other IDE like Eclipse works perfectly
 
 # Authentication by OAuth2
 Default Authentication is boring and does nothing. The project needs an OIDC provider for OAuth2 client even the development only.
