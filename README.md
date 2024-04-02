@@ -11,7 +11,7 @@ Initialize Project at https://start.spring.io/ with:
 - I use VScode but other IDE like Eclipse works perfectly
 
 # Authentication by OAuth2
-Default Authentication is boring and does nothing. The project needs an OIDC provider for OAuth2 client even the development only.
+Default Authentication is boring and does nothing. The project needs an OIDC (OpenID Connect) provider for OAuth2 client even the development only.
 
 ## Get an OIDC playground
 Any OIDC provider is good but it must allows *callback to localhost*. OIDC playground service could be:
