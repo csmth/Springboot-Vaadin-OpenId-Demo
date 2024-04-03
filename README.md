@@ -68,5 +68,9 @@ Button logoutButton = new Button("Logout", click -> {
                     VaadinServletRequest.getCurrent().getHttpServletRequest(), null, null);
         });
 ```
+
+Control Flow So Far
+![Alt](ControlFlow1.drawio.png)
+
 # Docker
 TODO
